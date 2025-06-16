@@ -1,0 +1,4 @@
+.notFoundPage { display: flex; justify-content: center; align-items: center; text-align: center; min-height: 80vh; }
+.content h1 { font-size: 8rem; color: var(--green-primary); margin: 0; }
+.content h2 { font-size: 2rem; margin: 10px 0; }
+.content p { color: var(--text-light); margin-bottom: 30px; }

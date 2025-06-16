@@ -1,0 +1,79 @@
+.layoutWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.mainContent {
+  flex-grow: 1;
+}
+
+/* Admin Layout */
+.adminLayout {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 250px;
+  background-color: #263238; /* Màu nền tối */
+  color: #cfd8dc;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.sidebarHeader {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #37474f;
+}
+.sidebarHeader h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+.sidebarNav {
+  flex-grow: 1;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebarNav a {
+  color: #cfd8dc;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sidebarNav a:hover {
+  background-color: #37474f;
+  color: #fff;
+}
+.sidebarNav a.active {
+  background-color: #004d40;
+  color: #fff;
+}
+.sidebarFooter button {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #546e7a;
+  color: #cfd8dc;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.sidebarFooter button:hover {
+  background-color: #546e7a;
+  color: #fff;
+}
+.adminContent {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #f4f6f8;
+}
