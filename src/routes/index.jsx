@@ -12,6 +12,7 @@ import ContactPage from '../features/public/ContactPage';
 import NotFoundPage from '../features/public/NotFoundPage';
 import LoginPage from '../features/auth/LoginPage';
 import DashboardPage from '../features/admin/DashboardPage';
+import ProjectDetailPage from '../features/projects/ProjectDetailPage';
 
 const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AppRoutes = () => {
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/du-an" element={<ProjectsPage />} />
+        <Route path="/du-an/:projectId" element={<ProjectDetailPage />} />
         <Route path="/tin-tuc" element={<NewsPage />} />
         {/* Thêm route cho trang chi tiết tin tức */}
         <Route path="/tin-tuc/:newsId" element={<NewsDetailPage />} />

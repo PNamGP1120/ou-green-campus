@@ -80,7 +80,6 @@ const HomePage = () => {
                              <img src={ougreenLogo} alt="Logo CLB OU Green Plus" />
                         </div>
                         <div className={styles.aboutContent}>
-                            <span className={styles.preTitle}>Về Chúng Tôi</span>
                             <h2 className={styles.sectionTitle}>CLB OU Green Plus</h2>
                             <p>Câu Lạc Bộ OU Green Plus, trực thuộc Phòng Công Tác Sinh Viên, được thành lập với sứ mệnh Xây Dựng Và Lan Tỏa Ý Thức Bảo Vệ Môi Trường trong cộng đồng sinh viên và xã hội.</p>
                              <p>Chúng tôi tin rằng mỗi hành động nhỏ đều có thể tạo ra tác động lớn, góp phần xây dựng một tương lai bền vững và xanh hơn cho tất cả mọi người.</p>
@@ -108,7 +107,6 @@ const HomePage = () => {
             {/* 4. TIN TỨC NỔI BẬT */}
             <section className={styles.newsSection}>
                 <div className={styles.container}>
-                    <span className={styles.preTitle}>HOẠT ĐỘNG CỦA CHÚNG TÔI</span>
                     <h2 className={styles.sectionTitle}>Tin tức & Câu chuyện</h2>
                     <div className={styles.newsGrid}>
                         {featuredNews.map(item => (
