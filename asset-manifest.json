@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/ou-green-campus/static/css/main.f855e6bc.css",
-    "main.js": "/ou-green-campus/static/js/main.fa8a62ad.js",
-    "static/js/453.a45b1e53.chunk.js": "/ou-green-campus/static/js/453.a45b1e53.chunk.js",
-    "static/media/logo.svg": "/ou-green-campus/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/ou-green-campus/static/css/main.c0ce75de.css",
+    "main.js": "/ou-green-campus/static/js/main.c0cd3f17.js",
     "index.html": "/ou-green-campus/index.html",
-    "main.f855e6bc.css.map": "/ou-green-campus/static/css/main.f855e6bc.css.map",
-    "main.fa8a62ad.js.map": "/ou-green-campus/static/js/main.fa8a62ad.js.map",
-    "453.a45b1e53.chunk.js.map": "/ou-green-campus/static/js/453.a45b1e53.chunk.js.map"
+    "main.c0ce75de.css.map": "/ou-green-campus/static/css/main.c0ce75de.css.map",
+    "main.c0cd3f17.js.map": "/ou-green-campus/static/js/main.c0cd3f17.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.fa8a62ad.js"
+    "static/css/main.c0ce75de.css",
+    "static/js/main.c0cd3f17.js"
   ]
 }
