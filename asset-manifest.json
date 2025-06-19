@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/ou-green-campus/static/css/main.8e948f6a.css",
-    "main.js": "/ou-green-campus/static/js/main.927a9a00.js",
+    "main.css": "/ou-green-campus/static/css/main.6363c50a.css",
+    "main.js": "/ou-green-campus/static/js/main.d8525023.js",
+    "static/media/slogan-oug.png": "/ou-green-campus/static/media/slogan-oug.1ce4a4e6ce1e0b41f101.png",
     "static/media/plastic-bottle.png": "/ou-green-campus/static/media/plastic-bottle.0cf6c876c4027277de31.png",
     "static/media/glass-jar.jpg": "/ou-green-campus/static/media/glass-jar.2e6286bbda638c03205a.jpg",
     "static/media/organic-bin.png": "/ou-green-campus/static/media/organic-bin.5c401f5d3fff3f02b735.png",
     "static/media/logo.png": "/ou-green-campus/static/media/logo.8381b474e893aa08db6e.png",
     "static/media/recyclable-bin.jpg": "/ou-green-campus/static/media/recyclable-bin.101c48bf961b58442ea2.jpg",
     "index.html": "/ou-green-campus/index.html",
-    "main.8e948f6a.css.map": "/ou-green-campus/static/css/main.8e948f6a.css.map",
-    "main.927a9a00.js.map": "/ou-green-campus/static/js/main.927a9a00.js.map"
+    "main.6363c50a.css.map": "/ou-green-campus/static/css/main.6363c50a.css.map",
+    "main.d8525023.js.map": "/ou-green-campus/static/js/main.d8525023.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e948f6a.css",
-    "static/js/main.927a9a00.js"
+    "static/css/main.6363c50a.css",
+    "static/js/main.d8525023.js"
   ]
 }
