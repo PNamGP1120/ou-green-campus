@@ -5,7 +5,7 @@ const mockProjects = [
         title: 'Cuộc thi Đại sứ Môi trường',
         description: 'Tìm kiếm những gương mặt sinh viên tiên phong, có ảnh hưởng và những dự án đột phá trong lĩnh vực bảo vệ môi trường.',
         type: 'Sự kiện Đặc biệt',
-        image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2940', // Hình ảnh về sinh viên tham gia hoạt động
+        image: 'https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/507983227_1133859858788764_6026514188119547483_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4VJUthS3ywIQ7kNvwFUg3Ba&_nc_oc=AdlbReV8oFvGkSHpSnmUDrWXKWsD3R3wpEN5EXrbGnv-k_nQ1KFECCiJ3kwsFJUPA1g&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=mvc8kvZsBxMxgUAAz1bW3Q&oh=00_AfO5l09J7gmxPEkX_ecEHSiyshAWosFbDvZZuy2eR1hN_A&oe=68596934', // Hình ảnh về sinh viên tham gia hoạt động
         content: 'Đây là nội dung chi tiết của cuộc thi Đại sứ Môi trường, nơi các bạn sinh viên thể hiện tài năng và nhiệt huyết của mình...'
     },
     {
@@ -14,7 +14,7 @@ const mockProjects = [
         title: 'Sự kiện OU Green+ Tour',
         description: 'Một chuỗi trạm thông tin và hoạt động tương tác nhằm thúc đẩy lối sống xanh và bền vững trong cộng đồng sinh viên OU.',
         type: 'Hoạt động Sinh viên',
-        image: 'https://images.unsplash.com/photo-1492168732976-2676c584c675?q=80&w=2940', // Hình ảnh về tour và hoạt động ngoài trời
+        image: 'https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/487441513_1075711137936970_8847140643265317979_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9wUkVOrKWV4Q7kNvwHW919E&_nc_oc=Adlkuo2Aa5gwPCEXP3ol58sljR8gonvAWXNQry5w1CZ-wPAjJ89Qz7G58H337dPWl9Y&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=ljfNBWva2BQspRR7vAVwUQ&oh=00_AfOedPGo7UdYm6FP1PRlvRc5ntGQ7kYeyQ3t1MQz3QMclQ&oe=68598709', // Hình ảnh về tour và hoạt động ngoài trời
         content: 'Nội dung chi tiết về sự kiện OU Green+ Tour...'
     },
     {
@@ -23,7 +23,7 @@ const mockProjects = [
         title: 'Ấn Xanh 2025',
         description: 'Hoạt động tình nguyện thường niên nhân dịp Tết đến, mang những món quà và sự sẻ chia ấm áp đến các hoàn cảnh khó khăn.',
         type: 'Hoạt động Tình nguyện',
-        image: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2940', // Hình ảnh về hoạt động tình nguyện
+        image: 'https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/484754335_1065763585598392_2895860288949071959_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=spJ-oGEiOTEQ7kNvwEbRX8O&_nc_oc=AdkermIrMUtvCWlwaKfkBmoQSCUIFl9QTTmpp5ZLnylvms-wn_rZxrwH4wg-LH5rwoc&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=ZwJQvPUbC2tYlf3qMYNwJw&oh=00_AfMoEhDz5rV3M4RNUVgVWR50CkgC_SisfJftOekXomMtPw&oe=685982F0', // Hình ảnh về hoạt động tình nguyện
         content: 'Nội dung chi tiết về hoạt động Ấn Xanh 2025...'
     },
     {
@@ -32,7 +32,7 @@ const mockProjects = [
         title: 'Sự kiện OU Thanks',
         description: 'Tổ chức các hoạt động ý nghĩa nhằm tri ân cộng đồng, các đối tác và những người đã luôn ủng hộ hành trình của CLB.',
         type: 'Tri ân Cộng đồng',
-        image: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2940', // Hình ảnh về cộng đồng
+        image: 'https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/484796276_1064175082423909_1664090190309311164_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WMaS611m6ogQ7kNvwHaelWT&_nc_oc=Adl-JIHsIJxPkwuZ-U0_Tal3jGD1A2i2ytuE29is4qNSwNbLIPO-S-Yr0KJi4TR8iSU&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=CB8N3tQERZMYHc0NpGLuzw&oh=00_AfNyukD_e4NgVnEzmXY2aTdddjuT-Pu_InaT8ZSqIToKdA&oe=68597E53', // Hình ảnh về cộng đồng
         content: 'Nội dung chi tiết về sự kiện OU Thanks...'
     }
 ];

@@ -16,6 +16,7 @@ const Header = () => {
           <NavLink to="/du-an" className={({ isActive }) => (isActive ? styles.active : '')}>Dự Án</NavLink>
           <NavLink to="/tin-tuc" className={({ isActive }) => (isActive ? styles.active : '')}>Tin Tức</NavLink>
           <NavLink to="/lien-he" className={({ isActive }) => (isActive ? styles.active : '')}>Liên Hệ</NavLink>
+          <NavLink to="/minigame" className={({ isActive }) => (isActive ? styles.active : '')}>Minigame</NavLink>
         </nav>
       </div>
     </header>

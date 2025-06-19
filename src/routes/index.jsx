@@ -13,6 +13,7 @@ import NotFoundPage from '../features/public/NotFoundPage';
 import LoginPage from '../features/auth/LoginPage';
 import DashboardPage from '../features/admin/DashboardPage';
 import ProjectDetailPage from '../features/projects/ProjectDetailPage';
+import MinigamePage from '../features/minigame/MinigamePage';
 
 const AppRoutes = () => {
   return (
@@ -24,8 +25,10 @@ const AppRoutes = () => {
         <Route path="/tin-tuc" element={<NewsPage />} />
         {/* Thêm route cho trang chi tiết tin tức */}
         <Route path="/tin-tuc/:newsId" element={<NewsDetailPage />} />
+        <Route path="/minigame" element={<MinigamePage />} />
         <Route path="/lien-he" element={<ContactPage />} />
         <Route path="/dang-nhap" element={<PublicRoute><LoginPage /></PublicRoute>} />
+
       </Route>
       <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin', 'editor']}><AdminLayout /></ProtectedRoute>}>
         <Route index element={<DashboardPage />} />

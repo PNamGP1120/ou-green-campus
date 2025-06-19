@@ -1,0 +1,50 @@
+.minigameContainer {
+  text-align: center;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #4caf50;
+}
+
+.message {
+  font-size: 18px;
+  color: #ff5722;
+  margin: 10px 0;
+}
+
+.trashItems {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.trashItem {
+  text-align: center;
+  cursor: grab;
+}
+
+.trashImage {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+.bins {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.bin {
+  text-align: center;
+}
+
+.binImage {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
