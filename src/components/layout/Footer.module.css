@@ -1,7 +1,91 @@
 .footer {
+  background-color: #2e7d32; /* Màu xanh lá cây đậm */
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
-  padding: 2rem;
-  background-color: var(--text-dark);
-  color: var(--white);
-  margin-top: auto; /* Đẩy footer xuống dưới cùng */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoSection {
+  flex: 1;
+  text-align: left;
+}
+
+.logo {
+  width: 80px; /* Giảm kích thước logo */
+  margin-bottom: 10px;
+}
+
+.logoSection p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.linksSection {
+  flex: 1;
+  text-align: left;
+}
+
+.linksSection h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.linksSection ul li {
+  margin-bottom: 5px;
+}
+
+.linksSection ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.linksSection ul li a:hover {
+  text-decoration: underline;
+}
+
+.socialSection {
+  flex: 1;
+  text-align: left;
+}
+
+.socialSection h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+  color: #a5d6a7; /* Màu xanh lá nhạt */
+}
+
+.copyright {
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #a5d6a7;
+  padding-top: 15px;
 }

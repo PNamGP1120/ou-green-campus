@@ -1,16 +1,20 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
+import sloganoug from '../../assets/images/slogan-oug.png';
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Link to="/" className={styles.logo}>
-          <span className={styles.ou}>OU</span>
-          <span className={styles.green}>GREEN</span>
-          <span className={styles.plus}>+</span>
-        </Link>
+        {/* Logo */}
+        <div className={styles.logoSection}>
+          <NavLink to="/">
+            <img src={sloganoug} alt="OU Green Plus Logo" className={styles.logo} />
+          </NavLink>
+        </div>
+
+        {/* Navigation */}
         <nav className={styles.nav}>
           <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : '')}>Trang Chủ</NavLink>
           <NavLink to="/du-an" className={({ isActive }) => (isActive ? styles.active : '')}>Dự Án</NavLink>
