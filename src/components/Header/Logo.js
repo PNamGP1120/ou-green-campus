@@ -10,10 +10,10 @@ const Logo = () => {
                 width="50"
                 height="50"
                 roundedCircle
-                className="border border-success"
+                // className="border border-success"
             />
             <span className="fw-bold fs-5" style={{ color: '#1a1380ff' }}>
-                OU <span className="text-success">Green Plus</span>
+                OU <span className="text-success">Green Campus</span>
             </span>
         </Navbar.Brand>
     );

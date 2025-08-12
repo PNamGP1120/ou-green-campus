@@ -1,30 +1,72 @@
-import { Dropdown, Image } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// src/components/Header/AvatarDropdown.jsx
+import React, { useContext } from "react";
+import { Dropdown, Image, Button } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
+import UserContext from '../../contexts/UserContext';
 
-const AvatarDropdown = () => (
-    <Dropdown align="end">
-        <Dropdown.Toggle as="div" style={{ cursor: 'pointer' }} className="p-0 ms-2">
+const AvatarDropdown = () => {
+  const navigate = useNavigate();
+  // Lấy state 'user' và hàm 'setUser' từ Context
+  const { user, setUser } = useContext(UserContext);
+
+  const handleLogout = () => {
+    localStorage.removeItem("access_token");
+    localStorage.removeItem("refresh_token");
+    localStorage.removeItem("user");
+    
+    // Cập nhật trạng thái người dùng trong Context
+    setUser(null);
+    
+    navigate("/dang-nhap");
+  };
+  console.log('user',user)
+  const isLoggedIn = !!user;
+
+  return (
+    <>
+      {!isLoggedIn ? (
+        <div className="d-flex align-items-center gap-2">
+          <Button as={Link} to="/dang-nhap" variant="outline-success" size="sm">
+            Đăng nhập
+          </Button>
+          <Button as={Link} to="/dang-ky" variant="success" size="sm">
+            Đăng ký
+          </Button>
+        </div>
+      ) : (
+        <Dropdown align="end">
+          <Dropdown.Toggle
+            as="div"
+            style={{ cursor: "pointer" }}
+            className="p-0 ms-2"
+          >
             <Image
-                src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/506080678_1432719111416712_583793444048519458_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ghlwQT5xIMUQ7kNvwGAPdSC&_nc_oc=AdlmN00PlV7tT8hYB822_DUT3G4MD0VBzLA5lkpBewluhToeqRBGHZ_QAJNSmAV9Sp1KzKY7XOKkCYmnXJ2noYKH&_nc_zt=23&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=XG1MRmZyC8a0M2A2pRpTxg&oh=00_AfWft0aOzQXLTtwCIhwueIBuAEC_Mq8zka72WadM4UbYCA&oe=6899518D"
-                width="40"
-                height="40"
-                roundedCircle
-                className="border border-success"
+              src={
+                user.avatar || "https://via.placeholder.com/40x40.png?text=User"
+              }
+              width="40"
+              height="40"
+              roundedCircle
+              className="border border-success"
             />
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
             <Dropdown.Item as={Link} to="/ho-so">
-                <i className="bi bi-person-circle me-2 text-success"></i>Hồ sơ
+              <i className="bi bi-person-circle me-2 text-success"></i>Hồ sơ
             </Dropdown.Item>
             <Dropdown.Item as={Link} to="/cai-dat">
-                <i className="bi bi-gear me-2 text-success"></i>Cài đặt
+              <i className="bi bi-gear me-2 text-success"></i>Cài đặt
             </Dropdown.Item>
             <Dropdown.Divider />
-            <Dropdown.Item as={Link} to="/dang-xuat">
-                <i className="bi bi-box-arrow-right me-2 text-success"></i>Đăng xuất
+            <Dropdown.Item onClick={handleLogout}>
+              <i className="bi bi-box-arrow-right me-2 text-success"></i>Đăng
+              xuất
             </Dropdown.Item>
-        </Dropdown.Menu>
-    </Dropdown>
-);
+          </Dropdown.Menu>
+        </Dropdown>
+      )}
+    </>
+  );
+};
 
 export default AvatarDropdown;
