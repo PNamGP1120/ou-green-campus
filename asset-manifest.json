@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ou-green-campus/static/css/main.3bec3480.css",
+    "main.js": "/ou-green-campus/static/js/main.93ae022d.js",
+    "static/js/453.528e741e.chunk.js": "/ou-green-campus/static/js/453.528e741e.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/ou-green-campus/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/ou-green-campus/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "index.html": "/ou-green-campus/index.html",
+    "main.3bec3480.css.map": "/ou-green-campus/static/css/main.3bec3480.css.map",
+    "main.93ae022d.js.map": "/ou-green-campus/static/js/main.93ae022d.js.map",
+    "453.528e741e.chunk.js.map": "/ou-green-campus/static/js/453.528e741e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bec3480.css",
+    "static/js/main.93ae022d.js"
+  ]
+}
