@@ -1,24 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { GoogleOAuthProvider } from '@react-oauth/google';
-import { UserProvider } from './contexts/UserContext';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import { UserProvider } from "./configs/MyContexts";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// Thay thế "YOUR_GOOGLE_CLIENT_ID" bằng client ID thực tế của bạn
-const googleClientId = "362950720220-guic1737n28ce4gvce2o035etsoqls3r.apps.googleusercontent.com";
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId={googleClientId}>
-      <UserProvider>
-        <App />
-      </UserProvider>
-    </GoogleOAuthProvider>
+    <UserProvider>
+      <App />
+    </UserProvider>
   </React.StrictMode>
 );
-
-reportWebVitals();

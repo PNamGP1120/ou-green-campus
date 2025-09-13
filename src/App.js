@@ -1,37 +1,61 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Footer from './layout/Footer';
-import Header from './layout/Header';
-import './App.css'; // Thêm dòng này
-import Home from './pages/Home';
-import News from './pages/News';
-import Library from './pages/Library';
-import Event from './pages/Event';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Profile from './pages/Profile';
+import Home from "./components/Home";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import News from "./components/News";
+import NewsDetail from "./components/NewsDetail";
+import Projects from "./components/Projects";
+import ProjectDetail from "./components/ProjectDetail";
+import Documents from "./components/Documents";
+import Chatbot from "./components/Chatbot";
+import Feedback from "./components/Feedback";
+import WasteClassifier from "./components/WasteClassifier";
+
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import ChatWidget from "./components/ChatWidget";
+import ProtectedRoute from "./ProtectedRoute";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="app-container">
-        <Header />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/tin-tuc" element={<News />} />
-            <Route path="/thu-vien" element={<Library />} />
-            <Route path="/su-kien" element={<Event />} />
-            <Route path="/dang-nhap" element={<Login />} />
-            <Route path="/dang-ky" element={<Register />} />
-            <Route path="/ho-so" element={<Profile />} />
-            {/* Thêm các route khác ở đây */}
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Header />
+      <main className="container mt-3">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+
+          {/* Ai cũng xem được */}
+          <Route path="/news" element={<News />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
+
+          {/* Chỉ user */}
+          <Route path="/projects" element={
+            <ProtectedRoute role="user"><Projects /></ProtectedRoute>
+          } />
+          <Route path="/projects/:id" element={
+            <ProtectedRoute role="user"><ProjectDetail /></ProtectedRoute>
+          } />
+          <Route path="/classify" element={
+            <ProtectedRoute role="user"><WasteClassifier /></ProtectedRoute>
+          } />
+          <Route path="/chatbot" element={
+            <ProtectedRoute role="user"><Chatbot /></ProtectedRoute>
+          } />
+          <Route path="/feedback" element={
+            <ProtectedRoute role="user"><Feedback /></ProtectedRoute>
+          } />
+
+          {/* Chỉ editor */}
+          <Route path="/documents" element={
+            <ProtectedRoute role="editor"><Documents /></ProtectedRoute>
+          } />
+        </Routes>
+      </main>
+      <ChatWidget />
+      <Footer />
     </BrowserRouter>
   );
 }
